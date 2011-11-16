@@ -1,12 +1,13 @@
 %p
   This is a
   = link_to("little", word_path('little'))
-  webservice that returns rhymes.
+  webservice that returns
+  = link_to("rhymes", word_path('rhymes')) + "."
 
   Add a "full" query param to include Arpabet transcriptions, you
   = link_to("monkey", word_path('monkey', :full => 1)) + '.'
   
-  Source code is at 
-  = link_to("github.com/zeke/arpabet", "http://github.com/zeke/arpabet")
+  Source code is on 
+  = link_to("github", "http://github.com/zeke/arpabet") + "."
   
   
