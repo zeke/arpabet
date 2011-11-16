@@ -1,13 +1,16 @@
 %p
-  This is a
-  = link_to("little", word_path('little'))
-  webservice that returns
+  = link_to("I", "http://zeke.sikelianos.com", :class => 'weak')
+  made a webservice for finding
   = link_to("rhymes", word_path('rhymes')) + "."
 
-  Add a "full" query param to include Arpabet transcriptions, you
+  You can also get the
+  = link_to("Arpabet", "http://en.wikipedia.org/wiki/Arpabet", :class => 'weak')
+  transcriptions if you 
+  = link_to("fiddle", word_path('fiddle', :full => 1))
+  with the params, you
   = link_to("monkey", word_path('monkey', :full => 1)) + '.'
   
   Source code is on 
-  = link_to("github", "http://github.com/zeke/arpabet") + "."
+  = link_to("github", "http://github.com/zeke/arpabet", :class => 'weak') + "."
   
   
