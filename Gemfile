@@ -16,6 +16,4 @@ group :test, :development do
   gem 'factory_girl_rails'
   gem 'autotest', '~>4.4.6'
   gem 'autotest-rails-pure', '~>4.1.2'
-  gem 'autotest-growl', '~>0.2.16'
-  gem 'autotest-fsevent', '~>0.2.7', :require => false unless RUBY_PLATFORM =~ /darwin/i
 end
