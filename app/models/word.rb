@@ -6,6 +6,10 @@ class Word < ActiveRecord::Base
   
   before_save :clean_up_spelling
   before_save :clean_up_arpabet_transcription
+  
+  def to_param
+    self.spelling
+  end
 
   # Find words with similarly ending arpabet transcriptions
   # Try for maximum match depth, decrementing it until something comes back
