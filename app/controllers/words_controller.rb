@@ -8,6 +8,8 @@ class WordsController < ApplicationController
 
     if @word.blank?
       render :json => []
+    elsif params[:delimited].present?
+      render :text => @word.rhymes.map(&:spelling).join(';')
     elsif params[:full].present?
       render :json => @word.rhymes, :except => [:id, :created_at, :updated_at]
     else
