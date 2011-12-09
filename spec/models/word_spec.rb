@@ -76,7 +76,7 @@ describe Word do
   
   describe "Word.find_by_transcription_pattern(pattern)" do
     
-    it "returns all words with transcriptions that match the given patten" do
+    it "returns all words with transcriptions that match the given pattern" do
       Word.create(:spelling => "bob", :arpabet_transcription => "B AA1 B")
       Word.create(:spelling => "sob", :arpabet_transcription => "B AA1 B")
       Word.create(:spelling => "dingo", :arpabet_transcription => "D IH1 NG G OW0")

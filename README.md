@@ -6,15 +6,23 @@ This is a rails webservice that finds rhymes by matching [Arpabet](http://en.wik
 [arpabet.heroku.com](http://arpabet.heroku.com)
 
 
-Params
+Query Params
+------------
 
-  :limit - defaults to 50
-  :skip - defaults to 0
-  :full - set to any value to include arpabet transcriptions in response objects
-  :delimited - set to any value to get back a semicolon-delimited string of words
+    :limit      -> defaults to 50
+    :skip       -> defaults to 0
+    :full       -> defaults to false. set any value to get back arpabet transcriptions in response objects
+    :delimited  -> defaults to false. set any value to get back a semicolon-delimited string of words
 
-Features
---------
+Spec Output
+-----------
+
+    WordsController
+      pagination
+        defaults to 50 words per_page
+        defaults to :page 1
+        honors :limit param alone
+        honors :limit param in conjunction with :skip param
 
     SearchPattern
       treats 'foo*' as a 'begins with' query
@@ -34,10 +42,7 @@ Features
       Word.transcribe(spelling)
         takes a spelling and gives back a transcription
       Word.find_by_transcription_pattern(pattern)
-        returns all words with transcriptions that match the given patten
-
-    Finished in 7.85 seconds
-    12 examples, 0 failures
+        returns all words with transcriptions that match the given pattern
 
 Credit
 ------
