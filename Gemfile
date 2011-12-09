@@ -4,6 +4,7 @@ gem 'jquery-rails'
 gem 'rails', '3.1.1'
 gem 'mysql2'
 gem 'haml-rails'
+gem 'will_paginate', '~> 3.0'
 gem 'pg'
 
 group :assets do

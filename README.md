@@ -5,6 +5,14 @@ This is a rails webservice that finds rhymes by matching [Arpabet](http://en.wik
 
 [arpabet.heroku.com](http://arpabet.heroku.com)
 
+
+Params
+
+  :limit - defaults to 50
+  :skip - defaults to 0
+  :full - set to any value to include arpabet transcriptions in response objects
+  :delimited - set to any value to get back a semicolon-delimited string of words
+
 Features
 --------
 
