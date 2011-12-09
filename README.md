@@ -14,6 +14,14 @@ Query Params
     :full       -> defaults to false. set any value to get back arpabet transcriptions in response objects
     :delimited  -> defaults to false. set any value to get back a semicolon-delimited string of words
 
+Example Queries
+---------------
+
+- [/words/sleigh](http://arpabet.heroku.com/words/sleigh)
+- [/words/sleigh?full=1](http://arpabet.heroku.com/words/sleigh?full=1)
+- [/words/sleigh?delimited=1](http://arpabet.heroku.com/words/sleigh?delimited=1)
+- [/words/sleigh?limit=10&skip=10](http://arpabet.heroku.com/words/sleigh?limit=10&skip=10)
+
 Spec Output
 -----------
 
