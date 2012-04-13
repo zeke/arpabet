@@ -1,0 +1,16 @@
+{
+  "id": "rhymetime",
+  "api": {
+    "config_vars": [ "RHYMETIME_URL" ],
+    "password": "PuBFDICYkq55Vmxc",
+    "sso_salt": "S4Xa0l6bPYP33Nda",
+    "production": {
+      "base_url": "https://arpabet.heroku.com/heroku/resources",
+      "sso_url": "https://arpabet.heroku.com/sso/login"
+    },
+    "test": {
+      "base_url": "http://localhost:3000/heroku/resources",
+      "sso_url": "http://localhost:3000/sso/login"
+    }
+  }
+}

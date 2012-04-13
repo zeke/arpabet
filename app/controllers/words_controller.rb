@@ -1,6 +1,12 @@
 class WordsController < ApplicationController
-  
+
+  before_filter :authenticate, :only => [:heroku]
+
   def index
+  end
+  
+  def heroku    
+    render :json => { :id => 'booboo', :config => { "RHYMETIME_URL" => "http://arpabet.heroku.com/" } }
   end
   
   def show
@@ -24,4 +30,12 @@ class WordsController < ApplicationController
     end
   end
   
+  protected
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "rhymetime" && password == "PuBFDICYkq55Vmxc"
+    end
+  end
+
 end
