@@ -54,8 +54,8 @@ Spec Output
 Developer Setup
 ---------------
 
-    cp config/database.yml.example config/database.yml # postgres by default
     bundle
+    cp config/database.yml.example config/database.yml # postgres by default
     rake db:create:all
     heroku db:pull
     rake
