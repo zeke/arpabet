@@ -1,0 +1,10 @@
+# http://stackoverflow.com/questions/6651275/what-do-the-mean-in-this-database-yml-file
+
+development: &default
+  adapter: postgresql
+  host: localhost
+  database: arpabet-development
+
+test: &test
+  <<: *default
+  database: arpabet-test

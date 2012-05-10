@@ -5,7 +5,6 @@ This is a rails webservice that finds rhymes by matching [Arpabet](http://en.wik
 
 [arpabet.heroku.com](http://arpabet.heroku.com)
 
-
 Query Params
 ------------
 
@@ -51,6 +50,15 @@ Spec Output
         takes a spelling and gives back a transcription
       Word.find_by_transcription_pattern(pattern)
         returns all words with transcriptions that match the given pattern
+
+Developer Setup
+---------------
+
+    cp config/database.yml.example config/database.yml # postgres by default
+    bundle
+    rake db:create:all
+    heroku db:pull
+    rake
 
 Credit
 ------
