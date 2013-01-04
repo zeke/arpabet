@@ -1,0 +1,41 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "domain": "arpabet.herokuapp.com",
+  "name": "RhymeTime",
+  "description": "An HTTP JSON webservice for finding rhymes.",
+  "keywords": [
+    "rhyme",
+    "language",
+    "fun",
+    "poetry",
+    "music"
+  ],
+  "maintainers": [
+    {
+      "name": "Zeke Sikelianos",
+      "email": "zeke@heroku.com",
+      "twitter": "zeke",
+      "github": "zeke",
+      "website": "http://zeke.sikelianos.com"
+    }
+  ],
+  "bugs": {
+    "mail": "zeke@sikelianos.com",
+    "web": "https://github.com/zeke/arpabet/issues"
+  },
+  "github_repo_url": "https://github.com/zeke/arpabet",
+  "license": {
+    "type": "MIT",
+    "url": "http://en.wikipedia.org/wiki/MIT_License"
+  },
+  "media": {
+    "icon_16": "/media/icon-16.png",
+    "icon_32": "/media/icon-32.png",
+    "icon_64": "/media/icon-64.png",
+    "icon_128": "/media/icon-128.png",
+    "icon_256": "/media/icon-256.png",
+    "logo_svg": "/media/logo.svg",
+    "monogram_svg": "/media/monogram.svg"
+  }
+}
