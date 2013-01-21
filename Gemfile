@@ -5,6 +5,8 @@ gem 'rails', '3.1.1'
 gem 'haml-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'pg'
+gem 'thin'
+gem 'psych'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
